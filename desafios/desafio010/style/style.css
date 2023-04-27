@@ -39,7 +39,6 @@
 
 body {
     font-family: var(--fonte-padrao);
-    text-align: justify;
     background-color: var(--cor1);
 }
 

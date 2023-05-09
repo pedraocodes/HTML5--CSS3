@@ -10,18 +10,34 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        body > body {
+            background-color: black;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
         }
 
+        caption {
+            background-color: lightgray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
         td, th {
             border: 1px solid black;
-            padding: 10px;            
+            padding: 10px;         
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(56, 56, 56);
             color: white;
         }
 
@@ -30,7 +46,7 @@
         }
     </style>
 </head>
-<body>
+<body .class>
     <h1>
         Uso de tabelas grandes
     </h1>
@@ -45,10 +61,13 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>
+            População das unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -151,7 +170,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">0000</td>
             </tr>
         </tfoot>

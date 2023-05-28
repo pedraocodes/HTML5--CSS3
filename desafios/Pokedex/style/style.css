@@ -50,10 +50,15 @@
 }
 
 .caixa::-webkit-scrollbar {
-    height: 10px;
+    height: 15px;
+}
+
+.caixa::-webkit-scrollbar-track {
     background-color: black;
 }
 
 .caixa::-webkit-scrollbar-thumb {
-    background-color: firebrick;
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 15px;
 }
